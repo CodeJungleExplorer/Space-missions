@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-Website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-color-primary text-color-white tracking-wider">
+    <header class="sticky top-0 z-50">
+        <nav class="container flex justify-between items-center">
+            <div class="py-5 text-color-secondary font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-color-white">GALA</span>ЖЧ
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#future" class="hover:text-color-secondary ease-in duration-200">Future</a></li>
+                    <li><a href="#missions" class="hover:text-color-secondary ease-in duration-200">Missions</a></li>
+                    <li><a href="#events" class="hover:text-color-secondary ease-in duration-200">Events</a></li>
+                    <li><a href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
+                    <li><a href="#contact us" class="hover:text-color-secondary ease-in duration-200">Contact us</a>
+                    </li>
+
+                    <li><button
+                            class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">FAQ</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile screen  -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hLink" href="#future" class="hover:text-color-secondary ease-in duration-200">Future</a>
+                    </li>
+                    <li><a id="hLink" href="#missions"
+                            class="hover:text-color-secondary ease-in duration-200">Missions</a></li>
+                    <li><a id="hLink" href="#events" class="hover:text-color-secondary ease-in duration-200">Events</a>
+                    </li>
+                    <li><a id="hLink" href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
+                    <li><a id="hLink" href="#contact us" class="hover:text-color-secondary ease-in duration-200">Contact
+                            us</a></li>
+
+                    <li><button class="btn">free trial</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="relative">
+            <div class="container py-20">
+                <div class="flex flex-col items-center z-20 md:flex-row">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="title mb-4">Congratulations Chandrayan-3 for creating the history of mankind.</h1>
+                        <p class="leading-relaxed mb-10">First message - 'India, I reached my destination and you too!'
+                        </p>
+                        <button class="btn">Greet us</button>
+                    </div>
+
+                    <div class="md:w-1/2">
+                        <video controls loop src="Take off.webm"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="future" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Our Future</h4>
+                    <h1 class="title">ISRO’s vision is to harness space technology for national development and to
+                        benefit humanity.
+                    </h1>
+                </div>
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+                    <!-- card no 1 -->
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-calendar-days text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Founded</h3>
+                        <p class="leading-relaxed">ISRO was founded in 1969 and is headquartered in Bengaluru, India.
+                        </p>
+                    </div>
+
+                    <!-- card no 2 -->
+                    <div
+                        class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-tree text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">NavIC</h3>
+                        <p class="leading-relaxed">ISRO has also played a significant role in developing India’s
+                            indigenous satellite navigation system, NavIC. </p>
+                    </div>
+
+                    <!-- card no 3 -->
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-rocket text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">First Satellite</h3>
+                        <p class="leading-relaxed">ISRO built India’s first satellite, Aryabhata, launched into space by
+                            the Soviet Union in 1975.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="saving-money">
+            <div class="container py-20 relative">
+                <div class="flex flex-col items-center justify-between md:flex-row">
+                    <div class="mb-12 md:w-1/2">
+                        <img src="./img/pic1.jpg" alt="">
+                    </div>
+
+                    <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                        <h4 class="font-bold text-color-secondary mb-4">On Mars</h4>
+                        <h1 class="title mb-4">ISRO! Did this.</h1>
+                        <p class="leading-relaxed mb-10">The Mars Orbiter Mission (MOM), unofficially termed as
+                            Mangalyaan, (from Sanskrit: Mangala, "Mars" and yāna, "craft, vehicle") was a space probe
+                            orbiting Mars since 24 September 2014. <br> It was launched on 5 November 2013 by the Indian
+                            Space Research Organisation (ISRO).</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <section id="missions">
+                <div class="container py-20">
+                    <div class="text-center m-auto mb-20 md:w-1/2">
+                        <h4 class="font-bold text-color-secondary mb-4">Agencies opinion</h4>
+                        <h1 class="title">What peoples Say About ISRO</h1>
+                    </div>
+
+                    <!-- review container  -->
+                    <div class="mt-8">
+                        <div class="flex items-center justify-center flex-wrap">
+                            <img src="./img/pic2.jpg" alt=""
+                                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic"
+                                onclick="showReview()">
+                            <img src="./img/pic3.jpg" alt=""
+                                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                            <img src="./img/pic4.jpg" alt=""
+                                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                            <img src="./img/pic5.jpg" alt=""
+                                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                            <img src="./img/pic6.jpg" alt=""
+                                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                        </div>
+
+                        <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+                            <div class="user-text active-text">
+                                <p class="md:text-2xl mb-6">"Congratulations to ISRO on the successful launch of
+                                    Chandrayaan-3!"...
+                                </p>
+                                <h4 class="font-bold text-color-secondary mb-1">Bill Nelson</h4>
+                                <p>NASA Administrator</p>
+                            </div>
+
+
+                            <div class="user-text">
+                                <p class="md:text-2xl mb-6">"Congratulations to ISRO on the successful launch of
+                                    Chandrayaan-3"!</p>
+                                <h4 class="font-bold text-color-secondary mb-1">ESA</h4>
+                                <p>Europe</p>
+                            </div>
+
+                            <div class="user-text">
+                                <p class="md:text-2xl mb-6">"May the Chandrayaan-3 mission pave the way for future space
+                                    exploration missions"!</p>
+                                <h4 class="font-bold text-color-secondary mb-1">Valdmir Putin</h4>
+                                <p>Russian President</p>
+                            </div>
+
+                            <div class="user-text">
+                                <p class="md:text-2xl mb-6">"Wishing the Chandrayaan-3 mission all the best"!</p>
+                                <h4 class="font-bold text-color-secondary mb-1">Xi Jinping</h4>
+                                <p>China pPresident</p>
+                            </div>
+
+                            <div class="user-text">
+                                <p class="md:text-2xl mb-6">"Warmest congratulations on your achievement! Wishing you
+                                    even more success in the future"!</p>
+                                <h4 class="font-bold text-color-secondary mb-1">Bill Nelson</h4>
+                                <p>Artemis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="events" class="bg-color-primary-light">
+                <div class="container py-20">
+                    <div class="text-center m-auto mb-20 md:w-1/2">
+                        <h4 class="font-bold text-color-secondary mb-4">Events</h4>
+                        <h1 class="title">Achieves In Reasonable Price</h1>
+
+
+                        <!-- Rounded switch  -->
+                        <div class="mt-5 flex items-center justify-center gap-4">
+                            <p>Latest events</p>
+                            <label class="cursor-pointer relative inline-block w-20 h-8 rounded-full">
+                                <input type="checkbox" id="toggleBtn" class="peer opacity-0 w-0 h-0">
+                                <span
+                                    class="absolute top-0 left-0 right-0 bottom-0 bg-color-primary-light border border-solid border-color-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:rounded-full before:bg-color-white before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary"></span>
+                            </label>
+                            <p>Upcoming events</p>
+                        </div>
+                    </div>
+
+                    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- card 1 -->
+                        <div class="card relative h-auto w-auto">
+                            <!-- front side  -->
+                            <div id="card_1_front"
+                                class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                                <div class="relative">
+                                    <span style="font-size: 40px; color: brown;"> Chandrayan-3</span>
+                                    </p>
+                                </div>
+
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">615 cr</h3>
+                                </div>
+
+                                <ul class="space-y-4 pb-10">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Launched on 14 July 2023</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Landed on moon 23 August 2023</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Became 1st country </span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Who landed on S/P of the moon</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">14 days mission</span>
+                                    </li>
+                                </ul>
+
+                                <button class="card_btn">Get Started</button>
+                            </div>
+
+                            <!-- back side  -->
+                            <div id="card_1_back"
+                                class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                                <div class="relative">
+                                    <span style="font-size: 40px; color: brown;">ADITYA L1</span>
+                                </div>
+
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Budget</h3>
+                                </div>
+                                <button class="card_btn" style="margin-top:240px;">Get Started</button>
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="card relative h-auto w-auto">
+                            <!-- front side  -->
+                            <div id="card_2_front"
+                                class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                                <div class="relative">
+                                    <span style="font-size: 40px; color: brown;">Chandrayaan-2</span>
+                                </div>
+
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">970 cr</h3>
+                                </div>
+
+                                <ul class="space-y-4 pb-10">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Launched on 22 July 2019</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">98% Success rate</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">orbiter continues to circle the Moon</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Helping vikram lander for data</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                        <span class="pl-4">Didn't soft land on the moon</span>
+                                    </li>
+                                </ul>
+
+                                <button class="card_btn">Get Started</button>
+                            </div>
+
+                            <!-- back side  -->
+                            <div id="card_2_back"
+                                class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                                <div class="relative">
+                                    <span style="font-size: 40px; color: brown;">XPoSAT</span>
+                                </div>
+
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Budget</h3>
+                                </div>
+                                <button class="card_btn" style="margin-top:240px;">Get Started</button>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- card 3 -->
+                        <div class="card relative h-auto w-auto">
+                            <!-- front side  -->
+                            <div id="card_3_front"
+                                class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                                <div class="relative">
+                                    <span style="font-size: 40px; color: brown;">Chandrayaan-1</span>
+                                </div>
+
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">386 cr</h3>
+                                </div>
+
+                                <ul class="space-y-4 pb-10">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Launched on 22 0ct 2008</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Discovery of water molecules</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                        <span class="pl-4">Detected titanium and magnesium</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                        <span class="pl-4">Failure of the star tracker</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                        <span class="pl-4">Poor thermal shielding</span>
+                                    </li>
+                                </ul>
+
+                                <button class="card_btn">Get Started</button>
+                            </div>
+
+                            <!-- back side  -->
+                            <div id="card_3_back"
+                                class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                                <div class="relative">
+                                    <span style="font-size: 40px; color: brown;">NISAR</span>
+
+
+                                </div>
+
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Budget</h3>
+                                </div>
+
+
+                                <button class="card_btn" style="margin-top:240px;">Get Started</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog">
+                <div class="container py-20">
+                    <div class="text-center m-auto mb-20 md:w-1/2">
+                        <h4 class="font-bold text-color-secondary mb-4">Innovation And Quality Improvement</h4>
+                        <h1 class="title">Latest Updates, Solutions And News</h1>
+                    </div>
+
+                    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- card no 1 -->
+                        <div>
+                            <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                                <img src="./img/blog1.jpg" alt=""
+                                    class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                            </div>
+
+                            <div>
+                                <div class="flex items-center gap-5 py-5">
+                                    <p>14 July 2023</p>
+                                    <p>1 min read</p>
+                                </div>
+
+                                <a href="#blog"
+                                    class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">Chandrayan-3</a>
+
+                                <p class="leading-relaxed my-5">The Vikram lander successfully touched down as planned
+                                    on Wednesday evening. With this, India joins an elite club of countries to achieve a
+                                    soft landing on the Moon, after the US, the former Soviet Union and China...</p>
+
+
+                                <a href="#blog"
+                                    class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+                                    <span class="tracking-wider capitalize underline hover:no-underline">Read
+                                        more</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- card no 2 -->
+                        <div>
+                            <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                                <img src="./img/blog2.jpg" alt=""
+                                    class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                            </div>
+
+                            <div>
+                                <div class="flex items-center gap-5 py-5">
+                                    <p>22 July 2019</p>
+                                    <p>1 min read</p>
+                                </div>
+
+                                <a href="#blog"
+                                    class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">Chandrayaan-2</a>
+
+                                <p class="leading-relaxed my-5">The spacecraft was inserted into lunar orbit on August
+                                    20, 2019. The Chandrayaan-2 mission was India's first attempt to land on the lunar
+                                    surface. However, the lander Vikram hard-landed in September 2019. Then ISRO chief K
+                                    Sivan had said that the Chandrayaan-2 mission has achieved 98% of its objectives...
+                                </p>
+
+
+                                <a href="#blog"
+                                    class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+                                    <span class="tracking-wider capitalize underline hover:no-underline">Read
+                                        more</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- card no 3 -->
+                        <div>
+                            <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                                <img src="./img/blog3.jpg" alt=""
+                                    class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                            </div>
+
+                            <div>
+                                <div class="flex items-center gap-5 py-5">
+                                    <p>22 October 2008</p>
+                                    <p>1 min read</p>
+                                </div>
+
+                                <a href="#blog"
+                                    class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">Chandrayan-1</a>
+
+                                <p class="leading-relaxed my-5">ISRO's Chandrayaan-1 mission, despite its share of
+                                    challenges and setbacks, left an indelible mark on lunar exploration by discovering
+                                    water on the Moon's surface...</p>
+
+
+                                <a href="#blog"
+                                    class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+                                    <span class="tracking-wider capitalize underline hover:no-underline">Read
+                                        more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+            <section id="download-app" class="bg-color-primary-light">
+                <div class="container h-[80vh] grid place-items-center">
+                    <div class="text-center md:w-2/3 m-auto">
+                        <h1 class="title">Download App Now For Latest Updates</h1>
+                        <p class="leading-relaxed pt-5">Serving an impressive list of space related missions and
+                            upcoming events.</p>
+
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-5 pt-10">
+                            <a href="#"
+                                class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70">
+                                <img src="./img/ios-store-dark.png" alt="">
+                            </a>
+                            <a href="#"
+                                class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70">
+                                <img src="./img/g-play-dark.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact us">
+                <div class="container py-20">
+                    <div class="text-center m-auto mb-20 md:w-1/2">
+                        <h4 class="font-bold text-color-secondary mb-4">Have A Question</h4>
+                        <h1 class="title">Get In Touch</h1>
+                    </div>
+
+
+                    <form>
+                        <div class="w-full m-auto text-center md:w-2/3">
+                            <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+                                <input type="text"
+                                    class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                    placeholder="Name">
+
+                                <input type="email"
+                                    class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                    placeholder="Email">
+
+                                <input type="tel"
+                                    class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                    placeholder="Phone">
+
+                                <input type="text"
+                                    class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                    placeholder="DateOfBirth">
+                            </div>
+
+
+                            <textarea rows="4"
+                                class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                placeholder="Message"></textarea>
+
+                            <button class="btn mt-10">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section id="footer">
+                <div class="bg-color-primary-dark relative">
+                    <div class="container py-10">
+                        <div class="grid gap-10 md:grid-cols-3 pb-10">
+                            <div class="space-y-6">
+                                <h4 class="font-bold text-lg">Address</h4>
+                                <p class="leading-relaxed">ISRO Headquarters, Antariksh Bhavan, New BEL Road
+                                    Bengaluru-560 094
+                                    Phone: +91 80 22172294 / 96
+                                    Email: isropr[at]isro[dot]gov[dot]in</p>
+                                <div class="flex gap-5 items-center">
+                                    <p>Follow Us</p>
+                                    <i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"></i>
+                                    <i class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"></i>
+                                    <i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"></i>
+                                    <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"></i>
+                                </div>
+                            </div>
+                            <div class="flex justify-between md:justify-around">
+                                <div class="space-y-6">
+                                    <h4 class="font-bold text-lg">Quick Links</h4>
+                                    <ul class="space-y-3">
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#">Home</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#future">Future</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#missions">Missions</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#events">Events</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#blog">Blog</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#contact us">Contact us</a></li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="space-y-6">
+                                    <h4 class="font-bold text-lg">Help</h4>
+                                    <ul class="space-y-3">
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#">About Us</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#future">Partners</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#missions">Career</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#events">Reviews</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#blog">Terms & Conditions</a></li>
+                                        <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                                href="#contact us">Help</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <h4 class="font-bold text-lg">Newsletter</h4>
+                                <p class="leading-relaxed">Subscribe With Email And Loads Of News Will Be Sent To You
+                                </p>
+                                <div class="flex items-center">
+                                    <input type="text"
+                                        class="w-3/4 text-color-gray bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none"
+                                        placeholder="Enter Your Email">
+
+                                    <button type="submit"
+                                        class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex justify-center pt-10 border-t border-color-gray">
+                            <p>2023 &copy; GALAЖЧ All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+
+    <script>
+
+        const navbar = document.querySelector('header');
+
+        window.onscroll = () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-color-primary-dark');
+                navbar.classList.add('border-b');
+                navbar.classList.add('border-color-gray');
+            } else {
+                navbar.classList.remove('bg-color-primary-dark');
+                navbar.classList.remove('border-b');
+                navbar.classList.remove('border-color-gray');
+            }
+        }
+
+        // Mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelectorAll('#hLink');
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        })
+
+        // testimonial
+        const userTexts = document.getElementsByClassName('user-text');
+        const userPics = document.getElementsByClassName('user-pic');
+
+        function showReview() {
+            for (userPic of userPics) {
+                userPic.classList.remove("active-pic");
+            }
+            for (userText of userTexts) {
+                userText.classList.remove("active-text");
+            }
+
+            let i = Array.from(userPics).indexOf(event.target);
+
+            userPics[i].classList.add('active-pic');
+            userTexts[i].classList.add('active-text');
+        }
+
+        const toggleBtn = document.getElementById('toggleBtn');
+
+        const card_1_front = document.querySelector("#card_1_front");
+        const card_1_back = document.querySelector("#card_1_back");
+
+        const card_2_front = document.querySelector("#card_2_front");
+        const card_2_back = document.querySelector("#card_2_back");
+
+        const card_3_front = document.querySelector("#card_3_front");
+        const card_3_back = document.querySelector("#card_3_back");
+
+        toggleBtn.addEventListener('change', () => {
+            card_1_front.classList.toggle('-rotate-y-180');
+            card_1_back.classList.toggle('rotate-y-180');
+
+            card_2_front.classList.toggle('-rotate-y-180');
+            card_2_back.classList.toggle('rotate-y-180');
+
+            card_3_front.classList.toggle('-rotate-y-180');
+            card_3_back.classList.toggle('rotate-y-180');
+
+        })
+    </script>
+</body>
+
+</html>
